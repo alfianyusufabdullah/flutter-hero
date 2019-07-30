@@ -64,8 +64,8 @@ class AnotherScreen extends StatelessWidget {
           tag: "logo",
           child: Image.asset(
             "asset/dicoding.png",
-            width: 150,
-            height: 150,
+            width: 75,
+            height: 75,
           ),
         ),
       ),
