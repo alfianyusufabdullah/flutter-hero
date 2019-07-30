@@ -26,10 +26,13 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset(
-              "asset/dicoding.png",
-              width: 150,
-              height: 150,
+            Hero(
+              tag: "logo",
+              child: Image.asset(
+                "asset/dicoding.png",
+                width: 150,
+                height: 150,
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 20.0),
@@ -57,10 +60,13 @@ class AnotherScreen extends StatelessWidget {
         title: Text("Another Screen"),
       ),
       body: Center(
-        child: Image.asset(
-          "asset/dicoding.png",
-          width: 150,
-          height: 150,
+        child: Hero(
+          tag: "logo",
+          child: Image.asset(
+            "asset/dicoding.png",
+            width: 150,
+            height: 150,
+          ),
         ),
       ),
     );
