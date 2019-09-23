@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                 child: Text("To another screen"),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (_) {
-                    return AnotherScreen();
+                    return SecondScreen();
                   }));
                 },
               ),
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class AnotherScreen extends StatelessWidget {
+class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
